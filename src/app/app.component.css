@@ -2,6 +2,10 @@
     flex: 1 1 auto;
 }
 
+#title{
+    cursor: pointer;
+}
+
 .mat-toolbar{
     position: sticky;
     position: -webkit-sticky; /* For macOS/iOS Safari */
@@ -22,10 +26,12 @@
 
 .content{
     background-color: #303030;
+    overflow-y: scroll;
 }
 
 section{
     padding: 20px;
+    scroll-margin-top: 1em;
 }
 
 .mat-grid-list{

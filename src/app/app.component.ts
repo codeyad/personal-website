@@ -23,4 +23,8 @@ export class AppComponent implements OnInit{
   activeRoute(fragment: string){
     return this.fragmentSelected === fragment;
   }
+
+  scrollToTop(){
+    window.scrollTo(0,0);
+  }
 }
