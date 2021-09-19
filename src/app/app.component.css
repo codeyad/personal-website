@@ -38,3 +38,25 @@ section{
     background-color: #8d8b8b;
     color: white;
 }
+
+pre {
+	width: 75%;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	overflow-y: hidden;
+	font-size: 20px;
+	line-height: 20px;
+	background: #efefef;
+	border: 1px solid #777;
+}
+
+pre code {
+	padding: 10px;
+	color: #333;
+}
+
+pre code span.highlight{
+    background-color: #c2185b;
+    color: #FFF;
+}

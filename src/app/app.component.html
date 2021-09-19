@@ -1,9 +1,6 @@
 <div class="container">
   <mat-toolbar color="primary" [class.mat-elevation-z8]="true">
-    <span 
-      id="title" 
-      (click)="scrollToTop()"
-      routerLink="/">{{title}}</span>
+    <span id="title" (click)="scrollToTop()" routerLink="/">{{title}}</span>
     <span class="spacer"></span>
     <a mat-button href="#whoiam" [ngClass]="{'active': activeRoute('whoiam')}">Who I Am</a>
     <a mat-button href="#stack" [ngClass]="{'active': activeRoute('stack')}">Tech Stack</a>
@@ -13,7 +10,22 @@
   <div class="content">
     <section id="whoiam">
       <mat-grid-list cols="1" rowHeight="2:1" gutterSize="20px">
-        <mat-grid-tile>Who I Am</mat-grid-tile>
+        <mat-grid-tile>
+          <pre>
+            <code>{{
+              export class Personal implements OnInit{
+                whoIAm:string;
+                constructor(){ }
+
+                ngOnInit(){
+                  this.whoIAm = `<span class="highlight">Hi, I'm Melvis Perez, and Full Stack web developer</span>`;
+                }
+
+              }
+            }}
+            </code>
+          </pre>
+        </mat-grid-tile>
       </mat-grid-list>
     </section>
     <section id="stack">
